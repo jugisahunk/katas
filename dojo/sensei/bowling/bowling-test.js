@@ -1,8 +1,13 @@
+"use strict"
+
+var bowling = require("./bowling.js");
+
 describe("Bowling Kata", function(){
-  var gameOfBowling = new BowlingGame();
   describe("Score", function(){
-    it("should score a game of bowling",function(){
-      gameOfBowling.score();
+    it("should have a way to score a game of bowling",function(){
+      var bowlingGame = new bowling();
+
+      expect(bowlingGame).not.toBeUndefined();
     });
   });
 });
