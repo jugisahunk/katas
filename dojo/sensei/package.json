@@ -4,8 +4,13 @@
   "description": "runs tests (sensei) that validate the students' actions (production code)",
   "main": "sensei.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "start": "node sensei.js"
   },
   "author": "Jason Knight",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.2.0"
+  }
 }

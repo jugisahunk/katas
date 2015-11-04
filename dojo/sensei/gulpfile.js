@@ -1,13 +1,11 @@
 var gulp = require('gulp');
 var jasmine = require('gulp-jasmine');
 
-gulp.task('watch', function(){
-  gulp.watch(['spec/**/*.js', 'js/**/*.js'], ['test']);
+gulp.task('bowling-kata', function(){
+  gulp.watch(['bowling/**/*.js'], ['bowling-test']);
 });
 
-gulp.task('test', function(){
-  return gulp.src('spec/*.js')
+gulp.task('bowling-test', function(){
+  return gulp.src('bowling/*-test.js')
     .pipe(jasmine({verbose:true, includeStackTrace: false}));
 });
-
-gulp.task('default', ['test']);
