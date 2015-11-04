@@ -5,5 +5,4 @@ function BowlingGame(){
 }
 
 BowlingGame.prototype.score = function(){
-  return;
 }

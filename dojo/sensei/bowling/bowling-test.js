@@ -1,6 +1,6 @@
 "use strict"
 
-var bowling = require("./bowling.js");
+var bowling = require("./BowlingGame.js");
 
 describe("Bowling Kata", function(){
   describe("Score", function(){
