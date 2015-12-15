@@ -9,3 +9,12 @@ gulp.task('bowling-test', function(){
   return gulp.src('./dojo/sensei/bowling/*-test.js')
     .pipe(jasmine({verbose:true, includeStackTrace: false}));
 });
+
+gulp.task('hungryscience-kata', function(){
+  gulp.watch(['./dojo/sensei/advent/hungryscience/**/*.js'], ['hungryscience-test']);
+});
+
+gulp.task('hungryscience-test', function(){
+  return gulp.src('./dojo/sensei/advent/hungryscience/*-test.js')
+    .pipe(jasmine({verbose:true, includeStackTrace: false}));
+});
