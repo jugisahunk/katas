@@ -22,3 +22,10 @@ A texture of 44*3 + 56*-1 = 76
 Multiplying these together (68 * 80 * 152 * 76, ignoring calories for now) results in a total score of 62842880, which happens to be the best score possible given these ingredients. If any properties had produced a negative total, it would have instead become zero, causing the whole score to multiply to zero.
 
 Given the ingredients in your kitchen and their properties, what is the total score of the highest-scoring cookie you can make?
+
+INPUTS
+
+Sugar: capacity 3, durability 0, flavor 0, texture -3, calories 2
+Sprinkles: capacity -3, durability 3, flavor 0, texture 0, calories 9
+Candy: capacity -1, durability 0, flavor 4, texture 0, calories 1
+Chocolate: capacity 0, durability 0, flavor -2, texture 2, calories 8
