@@ -18,3 +18,12 @@ gulp.task('hungryscience-test', function(){
   return gulp.src('./dojo/sensei/advent/hungryscience/*-test.js')
     .pipe(jasmine({verbose:true, includeStackTrace: false}));
 });
+
+gulp.task('santalisp-kata', function(){
+  gulp.watch(['./dojo/sensei/advent/santalisp/**/*.js'], ['santalisp-test']);
+});
+
+gulp.task('santalisp-test', function(){
+  return gulp.src('./dojo/sensei/advent/santalisp/*-test.js')
+    .pipe(jasmine({verbose:true, includeStackTrace: false}));
+});
